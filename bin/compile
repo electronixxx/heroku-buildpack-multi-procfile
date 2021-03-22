@@ -16,6 +16,7 @@ if [[ -z "${PROCFILE}" ]]; then
 fi
 
 cp "${BUILD_DIR}/${PROCFILE}" "${BUILD_DIR}/Procfile"
+cp "${BUILD_DIR}/${PROCFILE}" "${BUILD_DIR}/requirements.txt"
 
 if ! [ $? ]; then
     echo "FAILED to copy a Procfile" | indent
